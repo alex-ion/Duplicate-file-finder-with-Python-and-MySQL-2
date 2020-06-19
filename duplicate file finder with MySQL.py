@@ -76,38 +76,14 @@ def remove(cale):
 
 
 def incarcare_fisiere_din_HDD_in_RAM():
-    remove('F:\\Deea\\back-up andreea\\documente\\proiecte andreea\\FACULTATE\\licenta\\licenta cd')
-    remove('F:\\Deea\\back-up andreea\\Foldere de pe desktop\\mesaje 24.05.2010\\inbox all')
-    remove('F:\\Deea\\back-up andreea\\kmy\\diverse\\')
-    remove('F:\\Deea\\back-up andreea\\documente\\proiecte andreea\\FACULTATE\\an II sem I\\proiect tp sampoane')
-    remove('F:\\Deea\\back-up andreea\\documente\\proiecte andreea\\FACULTATE\\an III sem II\\b2b individual')
-    remove('F:\\Deea\\back-up andreea\\Foldere de pe desktop\\mesaje 24.05.2010\\outbox all\\2')
-    remove('F:\\Deea\\back-up andreea\\Foldere de pe desktop\\mesaje 24.05.2010\\outbox all\\1')
-    remove('F:\\Deea\\back-up andreea\\poze bumb\\ionut')
-    remove('F:\\Deea\\back-up andreea\\2009 - 2\\sf mihail 2009')
-    remove("F:\\Deea\\back-up andreea\\D\\poze\\2009\\2009 - 1")
-    remove("F:\\Deea\\back-up andreea\\2009 - 2\\")
-    remove("F:\\Deea\\back-up andreea\\2009 - 1\\herastrau noi2009")
-    remove("F:\\Deea\\back-up andreea\\D\\poze\\2009\\2009 - 1\\herastrau noi2009")
-    remove("F:\\Deea\\back-up andreea\\D\\poze\\2009\\2009 - 1\\21noi2009")
-    remove("F:\\Deea\\back-up andreea\\2009 - 1\\luminite 2009")
-    remove("F:\\Deea\\back-up andreea\\2009 - 1\\moieciu 19-20 dec 2009")
-    remove("F:\\Deea\\back-up andreea\\D\\deskt\\rent a car")
-    remove("F:\\Deea\\back-up andreea\\D\\Foldere de pe desktop\\mesaje 24.05.2010\\inbox all")
-    remove("F:\\Deea\\back-up andreea\\D\\Foldere de pe desktop\\mesaje 24.05.2010\\outbox all\\1")
-    remove("F:\\Deea\\back-up andreea\\D\\Foldere de pe desktop\\mesaje 24.05.2010\\outbox all\\2")
-    remove("F:\\Deea\\back-up andreea\\D\\Foldere de pe desktop\\muzica 2012")
-    remove("F:\\Deea\\back-up andreea\\D\\Foldere de pe desktop\\Poze album, puzzle\\Poze album Mickey")
-    remove("F:\\Deea\\back-up andreea\\D\\ionut- camy\\poze\\bumbu,tzuti moieciu 01,05-08\\Imagini")
-    remove("F:\\Deea\\back-up andreea\\D\\ionut- camy\\radoi\\muzica")
-    remove("F:\\Deea\\back-up andreea\\D\\poze\\2008\\moeciu 1-5 aug2008\\tel")
-    remove("F:\\Deea\\back-up andreea\\Foldere de pe desktop\\mesaje 24.05.2010")
-    remove("F:\\Deea\\back-up andreea\\kmy\\poze servici kmy")
-    remove("F:\\Deea\\back-up andreea\\2009 - 1\\Padure călugăreni")e
-    remove('F:\\D\\raman\\Mesaje E50')
-    remove('F:\\Deea\\back-up andreea\\GAMES\\Atomic Bomberman')
-    remove('F:\\Deea\\back-up andreea\\deskt\\kituri programe')
-    remove('F:\\Deea\\back-up andreea\\foto camy')
+    remove('')
+    remove('')
+    remove('')
+    remove('')
+    remove('')
+    remove('')
+    remove('')
+    remove('')
     remove('')
     remove('')
     Import("F:\\")
@@ -189,8 +165,8 @@ def incarcare_din_DB_in_RAM():
 
 def main():
     conectare_db()
-##    incarcare_fisiere_din_HDD_in_RAM() #Se ruleaza o singura data!!!
-##    inserare_fisiere_in_DB() #Se ruleaza o singura data!!!
+    incarcare_fisiere_din_HDD_in_RAM() #Se ruleaza o singura data!!!
+    inserare_fisiere_in_DB() #Se ruleaza o singura data!!!
     incarcare_din_DB_in_RAM()
     parcurgere_lista_DB()
     query = 'SELECT SUM(run_time) FROM run_times'
